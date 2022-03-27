@@ -2,17 +2,17 @@ package com.spc.second;
 
 public class Hero {
 
-        private String name;
-        public int blood;
-        private String rank="倔强青铜";
-        private int fight;
+    private String name;
+    public int blood;
+    private String rank = "倔强青铜";
+    private int fight;
 
-        public Hero(String name, int blood, String rank, int fight) {
-            this.name = name;
-            this.blood = blood;
-            this.rank = rank;
-            this.fight = fight;
-        }
+    public Hero(String name, int blood, String rank, int fight) {
+        this.name = name;
+        this.blood = blood;
+        this.rank = rank;
+        this.fight = fight;
+    }
 
     public String getName() {
         return name;
@@ -46,8 +46,8 @@ public class Hero {
         this.fight = fight;
     }
 
-    public void skill(){
+    public void skill() {
 
-        }
- }
+    }
+}
 
