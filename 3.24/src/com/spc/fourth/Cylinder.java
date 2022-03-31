@@ -1,5 +1,7 @@
 package com.spc.fourth;
 
+import jdk.internal.dynalink.beans.StaticClass;
+
 import static java.lang.Math.PI;
 
 public class Cylinder {
@@ -7,6 +9,8 @@ public class Cylinder {
     public double bulk(double height, double area) {
         return height * area;
     }
+
+
     static class Circle {
         double r;
         public double area(double r) {
