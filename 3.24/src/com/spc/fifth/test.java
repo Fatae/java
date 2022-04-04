@@ -1,11 +1,8 @@
-package com.spc.first;
-
-import com.spc.fifth.Drive;
-import com.spc.fifth.Vehicle;
+package com.spc.fifth;
 
 public class test {
     public static void main(String[] args) {
-        Drive drive = new Drive(26,"A1");
+        Drive drive = new Drive(25,"A1");
         Vehicle vehicle = new Vehicle();
         drive.drive(vehicle);
 
