@@ -1,17 +1,19 @@
 package com.spc.second;
 
-public class Hero {
+public abstract class Hero {
 
     private String name;
     public int blood;
     private String rank = "倔强青铜";
     private int fight;
+    private String ID;
 
-    public Hero(String name, int blood, String rank, int fight) {
+    public Hero(String name, int blood, String rank, int fight, String ID) {
         this.name = name;
         this.blood = blood;
         this.rank = rank;
         this.fight = fight;
+        this.ID = ID;
     }
 
     public String getName() {
@@ -46,8 +48,14 @@ public class Hero {
         this.fight = fight;
     }
 
-    public void skill() {
-
+    public String getID() {
+        return ID;
     }
+
+    public void setID(String ID) {
+        this.ID = ID;
+    }
+
+    public abstract void skill();
 }
 
