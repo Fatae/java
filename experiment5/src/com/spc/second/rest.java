@@ -3,6 +3,9 @@ package com.spc.second;
 public class rest extends Thread{
     @Override
     public void run() {
+        interrupt();
+    }
+    public void interrupt(){
         System.out.println("中场休息15分钟");
         try {
             Thread.sleep(2000);

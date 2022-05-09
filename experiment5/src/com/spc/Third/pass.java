@@ -9,11 +9,11 @@ public class pass {
         torch torch03=new torch();
         torch03.setName("叶培建");
         torch01.start();
-        Thread.sleep(1000);
+        torch01.join();
         torch02.start();
-        Thread.sleep(1000);
+        torch02.join();
         torch03.start();
-        Thread.sleep(1000);
+        torch03.join();
         System.out.println("火炬传递完成");
     }
 }
