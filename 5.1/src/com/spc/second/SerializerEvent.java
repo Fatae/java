@@ -10,7 +10,8 @@ public class SerializerEvent {
         objectOutputStream.close();
     }
     public void readObject() throws IOException, ClassNotFoundException {
-        ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("d:\\ss.dat"));
+        ObjectInputStream objectInputStream = new ObjectInputStream
+                (new FileInputStream("d:\\ss.dat"));
         System.out.println(objectInputStream.readObject());
         objectInputStream.close();
     }
